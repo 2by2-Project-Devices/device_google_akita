@@ -10,6 +10,8 @@ DEVICE_PRODUCT_COMPATIBILITY_MATRIX_FILE += \
     $(DEVICE_PATH)/aam_compatibility_matrix.xml \
     $(DEVICE_PATH)/compatibility_matrix.xml
 
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+
 # Kernel modules
 BOARD_VENDOR_KERNEL_RAMDISK_KERNEL_MODULES_BLOCKLIST_FILE := $(DEVICE_PATH)/modules.blocklist.vendor_kernel_boot
 BOARD_VENDOR_KERNEL_RAMDISK_KERNEL_MODULES_LOAD_RAW := $(strip $(shell cat $(DEVICE_PATH)/modules.load.vendor_kernel_boot))
