@@ -6,7 +6,7 @@
 
 # Inherit some common stuff
 TARGET_DISABLE_EPPE := true
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/2by2/config/common_full_phone.mk)
 
 # Inherit device configuration
 DEVICE_CODENAME := akita
