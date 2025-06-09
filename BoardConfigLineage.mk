@@ -4,6 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+TARGET_KERNEL_SOURCE := $(TARGET_KERNEL_DIR)
+
 DEVICE_PRODUCT_COMPATIBILITY_MATRIX_FILE += $(DEVICE_PATH)/aam_compatibility_matrix.xml
 
 # Kernel modules
